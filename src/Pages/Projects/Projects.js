@@ -1,27 +1,9 @@
 import React, { useState } from "react";
 import projects from "../../Content/projects.json";
 import "./Projects.css";
-
+// import members from "../../Components/MemberCard/MemberCard.js"
+// members.js 的第 4 行报错，跑不起来，说让member card 的改
 function App(props) {
-  // 每个project对应一个js file
-  // function handleProPage(proName) {
-  //   switch(proName) {
-  //     case "Label":
-  //       return <Label />
-
-  //     // MapSocial
-  //     default :
-  //       return <MapSocial />;
-  //   }
-  // }
-
-  // return (
-  //   <div>
-  //     <h1 style={{color: 'red'}}>{props.proName}</h1>  {/* test props */}
-  //     <>{handleProPage(props.proName)}</>
-  // );
-
-  // 每个project都在Projects.js里面渲染
   if(props.proName == "Label")
     return (
       <div>
